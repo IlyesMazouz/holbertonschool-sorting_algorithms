@@ -11,8 +11,10 @@ void insertion_sort_list(listint_t **list)
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
-	listint_t *curr;
+	listint_t *curr = NULL;
+
 	curr = (*list)->next;
+
 	while (curr != NULL)
 	{
 		listint_t *key = curr;
